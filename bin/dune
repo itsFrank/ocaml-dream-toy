@@ -1,6 +1,7 @@
 (executable
  (public_name server)
  (name server)
+ (modes byte exe)
  (libraries dream yojson lwt lwt.unix)
  (preprocess
   (pps ppx_yojson_conv ppx_let)))
