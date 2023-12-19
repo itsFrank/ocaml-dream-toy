@@ -1,6 +1,6 @@
 (executable
  (public_name server)
- (name main)
- (libraries server dream yojson lwt lwt.unix)
+ (name server)
+ (libraries dream yojson lwt lwt.unix)
  (preprocess
   (pps ppx_yojson_conv ppx_let)))

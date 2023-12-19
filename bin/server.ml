@@ -7,7 +7,7 @@ let user_map = ref UMap.empty
 type message_object = { assetid : string } [@@deriving yojson]
 
 let () =
-  Dream.run
+  Dream.run ~interface:"0.0.0.0"
   @@ Dream.logger
   @@ Dream.router
        [ Dream.get "/asset/:userid" (fun req ->

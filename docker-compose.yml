@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  dream:
+    build:
+      context: .
+      dockerfile: dockerfile
+    container_name: ocaml-dream
+    restart: unless-stopped
+    ports:
+      - "9090:8080"
+      # - "80:8080"
